@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LOUD</string>
+    <string name="LOUD">LOUD</string>
+    <string name="description">The mic for any speaker</string>
+    <string name="OFF">OFF</string>
+    <string name="MAX">MAX</string>
+    <string name="action_settings">Advanced Settings</string>
+
+</resources>
