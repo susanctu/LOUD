@@ -1,46 +1,39 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="0dp" >
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:background="@color/background_light"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView1"
+    	android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
         android:text="@string/LOUD"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/holo_blue_dark"
         android:textSize="70sp"
-        tools:context=".MainActivity" />
+        android:layout_gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
         android:text="@string/description"
         android:textSize="17sp"
-        tools:context=".MainActivity" />
+        android:layout_gravity="center_horizontal"/>
 
     <LinearLayout
         android:id="@+id/volumeBars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="26dp"
         android:baselineAligned="true"
         android:gravity="bottom"
-        android:orientation="horizontal"
-        android:padding="0dp"
-        android:paddingLeft="0dp" >
+        android:orientation="horizontal">
 
         <View
             android:id="@+id/rect1"
@@ -116,36 +109,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/volumeBars"
-        android:layout_alignRight="@+id/volumeBars"
-        android:layout_below="@+id/volumeBars"
-        android:layout_marginTop="40dp" >
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="@string/OFF"
-            android:textSize="17sp" />
-
-        <SeekBar
-            android:id="@+id/seek_bar"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:paddingTop="10dp"
-            android:text="@string/MAX"
-            android:textSize="17sp" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+         android:id="@+id/linearLayout1"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="40dp" >
+     
+         <SeekBar
+             android:id="@+id/seek_bar"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+</LinearLayout>

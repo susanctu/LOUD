@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         am = (AudioManager)this.getSystemService(Context.AUDIO_SERVICE);  
-        filled_color = getApplicationContext().getResources().getColor(android.R.color.holo_blue_dark);
+        filled_color = getApplicationContext().getResources().getColor(R.color.holo_blue_dark);
       	unfilled_color = getApplicationContext().getResources().getColor(android.R.color.darker_gray);
         setContentView(R.layout.activity_main);       
     }
